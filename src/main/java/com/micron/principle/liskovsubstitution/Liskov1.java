@@ -1,4 +1,4 @@
-package com.unimicron.principle.liskovsubstitution;
+package com.micron.principle.liskovsubstitution;
 
 /**
  * @author Leo

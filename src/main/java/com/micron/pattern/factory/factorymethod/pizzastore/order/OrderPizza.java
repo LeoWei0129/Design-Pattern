@@ -1,6 +1,6 @@
-package com.unimicron.pattern.factory.factorymethod.pizzastore.order;
+package com.micron.pattern.factory.factorymethod.pizzastore.order;
 
-import com.unimicron.pattern.factory.factorymethod.pizzastore.pizza.Pizza;
+import com.micron.pattern.factory.factorymethod.pizzastore.pizza.Pizza;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;

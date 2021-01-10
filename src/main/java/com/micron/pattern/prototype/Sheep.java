@@ -1,4 +1,4 @@
-package com.unimicron.pattern.prototype;
+package com.micron.pattern.prototype;
 
 /**
  * @author Leo

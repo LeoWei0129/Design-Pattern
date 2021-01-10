@@ -1,4 +1,4 @@
-package com.unimicron.principle.singleresponsibility;
+package com.micron.principle.singleresponsibility;
 
 /**
  * @author Leo

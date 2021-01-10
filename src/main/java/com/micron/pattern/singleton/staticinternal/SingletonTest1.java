@@ -1,4 +1,4 @@
-package com.unimicron.pattern.singleton.staticinternal;
+package com.micron.pattern.singleton.staticinternal;
 
 /**
  * @author Leo

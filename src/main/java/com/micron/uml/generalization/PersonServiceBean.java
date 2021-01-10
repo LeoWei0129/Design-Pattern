@@ -1,4 +1,4 @@
-package com.unimicron.uml.generalization;
+package com.micron.uml.generalization;
 
 /**
  * @author Leo

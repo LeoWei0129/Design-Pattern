@@ -1,4 +1,4 @@
-package com.unimicron.uml.implementation;
+package com.micron.uml.implementation;
 
 /**
  * @author Leo

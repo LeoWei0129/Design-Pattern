@@ -1,4 +1,4 @@
-package com.unimicron.uml.composition;
+package com.micron.uml.composition;
 
 /**
  * @author Leo

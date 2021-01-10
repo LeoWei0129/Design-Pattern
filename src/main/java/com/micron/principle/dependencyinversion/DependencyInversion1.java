@@ -1,4 +1,4 @@
-package com.unimicron.principle.dependencyinversion;
+package com.micron.principle.dependencyinversion;
 
 /**
  * @author Leo

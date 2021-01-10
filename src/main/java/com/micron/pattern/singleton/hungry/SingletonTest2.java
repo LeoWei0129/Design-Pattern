@@ -1,4 +1,4 @@
-package com.unimicron.pattern.singleton.hungry;
+package com.micron.pattern.singleton.hungry;
 
 /**
  * @author Leo

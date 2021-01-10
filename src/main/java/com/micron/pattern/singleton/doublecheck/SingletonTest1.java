@@ -1,4 +1,4 @@
-package com.unimicron.pattern.singleton.doublecheck;
+package com.micron.pattern.singleton.doublecheck;
 
 /**
  * @author Leo

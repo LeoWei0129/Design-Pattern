@@ -1,4 +1,4 @@
-package com.unimicron.principle.demeter;
+package com.micron.principle.demeter;
 
 /**
  * @author Leo

@@ -1,4 +1,4 @@
-package com.unimicron.principle.segregation;
+package com.micron.principle.segregation;
 
 /**
  * @author Leo

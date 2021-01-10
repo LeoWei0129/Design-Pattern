@@ -1,4 +1,4 @@
-package com.unimicron.uml.aggregation;
+package com.micron.uml.aggregation;
 
 /**
  * @author Leo

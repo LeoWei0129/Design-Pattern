@@ -3,7 +3,7 @@
 先看一個需求: 蓋房問題(builder_tradition.png)
 1. 需要蓋房子； 這一過程有打樁、砌牆、封頂
 2. 房子有各種各樣的，如公寓、透天、別墅，各種房子的建造過程雖然一樣，但是要求不要相同的
-3. 先寫一個傳統方法(com.unimicron.pattern.builder.tradition.*)
+3. 先寫一個傳統方法(com.micron.pattern.builder.tradition.*)
 
 傳統方法問題分析
 1. 優點是比較好理解，簡單易操作

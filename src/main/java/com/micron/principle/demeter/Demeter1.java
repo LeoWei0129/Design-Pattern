@@ -1,4 +1,4 @@
-package com.unimicron.principle.demeter;
+package com.micron.principle.demeter;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -20,27 +20,27 @@ public class Demeter1 {
 }
 
 // 學校總部員工類
-class UniversityEmployee{
+class UniversityEmployee {
     private String id;
 
-    public void setId(String id){
+    public void setId(String id) {
         this.id = id;
     }
 
-    public String getId(){
+    public String getId() {
         return this.id;
     }
 }
 
 // 學院員工類
-class CollegeEmployee{
+class CollegeEmployee {
     private String id;
 
-    public void setId(String id){
+    public void setId(String id) {
         this.id = id;
     }
 
-    public String getId(){
+    public String getId() {
         return this.id;
     }
 }
@@ -48,12 +48,12 @@ class CollegeEmployee{
 // 學校總部員工的管理類
 // UniversityManager的直接朋友: UniversityEmployee、CollegeManager
 // CollegeEmployee不是直接朋友，而是一個陌生類(因為是存在於printAllEmployee()的局部變量)，違背了迪米特法則
-class UniversityManager{
+class UniversityManager {
     // 返回學院的所有員工
-    public List<UniversityEmployee> getAllEmployee(){
+    public List<UniversityEmployee> getAllEmployee() {
         ArrayList<UniversityEmployee> universityEmployees = new ArrayList<UniversityEmployee>();
         // 這裡我們新增5個學院員工到employees
-        for(int i = 0; i < 5; i++){
+        for (int i = 0; i < 5; i++) {
             UniversityEmployee universityEmployee = new UniversityEmployee();
             universityEmployee.setId("學校總部員工id = " + new Integer(i).toString());
             universityEmployees.add(universityEmployee);
@@ -62,7 +62,7 @@ class UniversityManager{
     }
 
     // 該方法完成輸出學校總部員工ID與學院員工ID
-    void printAllEmployee(CollegeManager collegeManager){
+    void printAllEmployee(CollegeManager collegeManager) {
         // 將輸出學院員工的方法，封裝到CollegeManger中
         collegeManager.printAllEmployee();
 
@@ -76,12 +76,12 @@ class UniversityManager{
 }
 
 // 管理學院員工的管理類
-class CollegeManager{
+class CollegeManager {
     // 返回學院的所有員工
-    public List<CollegeEmployee> getAllEmployee(){
+    public List<CollegeEmployee> getAllEmployee() {
         ArrayList<CollegeEmployee> collegeEmployees = new ArrayList<CollegeEmployee>();
         // 這裡我們新增10個學院員工到collegeEmployees
-        for(int i = 0; i < 10; i++){
+        for (int i = 0; i < 10; i++) {
             CollegeEmployee collegeEmployee = new CollegeEmployee();
             collegeEmployee.setId("學院員工id = " + new Integer(i).toString());
             collegeEmployees.add(collegeEmployee);
@@ -90,7 +90,7 @@ class CollegeManager{
     }
 
     // 將輸出學院員工的方法，封裝到CollegeManger中
-    public void printAllEmployee(){
+    public void printAllEmployee() {
         List<CollegeEmployee> collegeEmployees = getAllEmployee();
         System.out.println("-----學院員工-----");
         for (CollegeEmployee ce : collegeEmployees) {

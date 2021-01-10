@@ -1,8 +1,8 @@
-package com.unimicron.pattern.factory.factorymethod.pizzastore.order;
+package com.micron.pattern.factory.factorymethod.pizzastore.order;
 
-import com.unimicron.pattern.factory.factorymethod.pizzastore.pizza.LDCheesePizza;
-import com.unimicron.pattern.factory.factorymethod.pizzastore.pizza.LDPepperPizza;
-import com.unimicron.pattern.factory.factorymethod.pizzastore.pizza.Pizza;
+import com.micron.pattern.factory.factorymethod.pizzastore.pizza.LDCheesePizza;
+import com.micron.pattern.factory.factorymethod.pizzastore.pizza.LDPepperPizza;
+import com.micron.pattern.factory.factorymethod.pizzastore.pizza.Pizza;
 
 /**
  * @author Leo

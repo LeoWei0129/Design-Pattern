@@ -1,4 +1,4 @@
-package com.unimicron.pattern.factory.traditional.pizzastore.pizza;
+package com.micron.pattern.factory.traditional.pizzastore.pizza;
 
 /**
  * @author Leo

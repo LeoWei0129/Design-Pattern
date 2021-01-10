@@ -1,4 +1,4 @@
-package com.unimicron.pattern.prototype.deepclone;
+package com.micron.pattern.prototype.deepclone;
 
 import java.io.*;
 

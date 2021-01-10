@@ -1,4 +1,4 @@
-package com.unimicron.uml.dependence;
+package com.micron.uml.dependence;
 
 /**
  * @author Leo

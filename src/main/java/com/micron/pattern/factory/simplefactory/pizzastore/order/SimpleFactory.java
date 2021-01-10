@@ -1,9 +1,9 @@
-package com.unimicron.pattern.factory.simplefactory.pizzastore.order;
+package com.micron.pattern.factory.simplefactory.pizzastore.order;
 
-import com.unimicron.pattern.factory.simplefactory.pizzastore.pizza.Pizza;
-import com.unimicron.pattern.factory.simplefactory.pizzastore.pizza.CheesePizza;
-import com.unimicron.pattern.factory.simplefactory.pizzastore.pizza.GreekPizza;
-import com.unimicron.pattern.factory.simplefactory.pizzastore.pizza.PepperPizza;
+import com.micron.pattern.factory.simplefactory.pizzastore.pizza.Pizza;
+import com.micron.pattern.factory.simplefactory.pizzastore.pizza.CheesePizza;
+import com.micron.pattern.factory.simplefactory.pizzastore.pizza.GreekPizza;
+import com.micron.pattern.factory.simplefactory.pizzastore.pizza.PepperPizza;
 
 /**
  * @author Leo

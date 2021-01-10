@@ -1,4 +1,4 @@
-package com.unimicron.pattern.singleton.lazy;
+package com.micron.pattern.singleton.lazy;
 
 /**
  * @author Leo

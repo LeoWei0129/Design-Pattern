@@ -1,4 +1,4 @@
-package com.unimicron.pattern.singleton.enumdemo;
+package com.micron.pattern.singleton.enumdemo;
 
 /**
  * @author Leo
