@@ -1,0 +1,15 @@
+接口隔離原則(Interface Segregation)
+
+基本介紹
+1. 客戶端不應該依賴它不需要的接口，即一個類對另一個類的依賴應該應該建立在最小的接口上
+2. 先看一張圖: (segregation_example1.png)
+   a. 類A通過接口interface1依賴類B，類C通過接口interface1依賴類D，如果接口interface1對於類A和類C來說不是最小接口，那麼類B和類D必
+      需去實現他們不需要的方法
+   b. 接口隔離原則，應當這樣處理:
+      將接口interface1拆分成獨立的幾個接口，類A和類C分別和他們需要的接口建立依賴關係，也就是採用了接口隔離原則
+
+傳統方法的問題和使用接口隔離原則改進(segregation_example2.png)
+1. 類A通過接口interface1依賴類B，類C通過接口interface1依賴類D，如果接口interface1對於類A和類C來說不是最小接口，那麼類B和類D必需去
+   實現他們不需要的方法
+2. 將接口interface1拆分成獨立的幾個接口，類A和類C分別和他們需要的接口建立依賴關係，也就是採用了接口隔離原則
+3. 接口interface1中出現的方法，根據實際情況將這些方法拆分成三個接口

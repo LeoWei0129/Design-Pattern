@@ -1,0 +1,42 @@
+關聯關係(Association)
+
+基本介紹
+1. 關聯關係實際上就是類與類之間的聯繫，它是依賴關係的特例
+2. 關聯具有導航性，即雙向關係或單向關係
+3. 關係具有多重性，如"1"(表示有且僅有一個)、"0..."(表示0個或者多個)、"0, 1"(表示0個或者一個)、"n...m"(表示n到m個都可以)、"m..."(
+   表示至少m個
+
+單向一對一關係(association.png)
+public class Person{
+    private IDCard idCard;
+}
+
+class IDCard{}
+
+雙向一對一關係(association.png)
+public class Person{
+    private IDCard idCard;
+}
+
+class IDCard{
+    private Person person;
+}
+
+-------------------------------------------------------------
+聚合關係(aggregation)
+
+基本介紹
+1. 聚合關係表示的是整體和部分的關係，整體和部分可以分開，它是關聯關係的特例，所以它具有關聯關係的導航性和多重性
+
+案例(aggregation.png)
+一台電腦由鍵盤、螢幕、滑鼠等組成，組成電腦的各個配件是可以從電腦分離出來的，使用空心菱形的實線表示
+
+-------------------------------------------------------------
+組合關係(composition)
+
+基本介紹
+1. 聚合關係表示的是整體和部分的關係，整體和部分不可以分開
+2. 承上案例，如果我們認為鍵盤、螢幕、滑鼠與電腦是不可分離的，則升級為組合關係(composition1.png)
+
+案例(composition2.png)
+在程式中我們定義實體: Person、Head、IDCard，那麼Person和Head就是組合，Person和IDCard就是聚合

@@ -1,0 +1,566 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="47c00246-f312-40d0-9779-b4e78e57d251" name="Default Changelist" comment="design pattern v1 from atguigu">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-pattern-tutorial.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/chap01_principle/composite_concept.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/chap01_principle/segregation_example1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/chap01_principle/segregation_example2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/chap01_principle/七大原則.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/chap01_principle/依賴倒轉原則.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/chap01_principle/合成復用原則.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/chap01_principle/單一職責原則.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/chap01_principle/接口隔離原則.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/chap01_principle/目的.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/chap01_principle/迪米特法則.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/chap01_principle/里式替換原則.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/chap01_principle/開閉原則.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/chap02_uml/UML類圖基礎.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/chap02_uml/aggregation.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/chap02_uml/association.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/chap02_uml/composition1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/chap02_uml/composition2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/chap02_uml/dependence.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/chap02_uml/generalization.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/chap02_uml/implementation.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/chap02_uml/uml_example.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/chap02_uml/關係1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/chap02_uml/關係2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/chap03_pattern/adapter/adapter_concept.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/chap03_pattern/adapter/class_adapter_uml.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/chap03_pattern/adapter/interface_adapetr_uml.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/chap03_pattern/adapter/object_adapter_uml.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/chap03_pattern/adapter/適配器模式.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/chap03_pattern/builder/builder_architecture.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/chap03_pattern/builder/builder_uml.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/chap03_pattern/builder/建造者模式.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/chap03_pattern/factory/simplefactory.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/chap03_pattern/factory/傳統未導入工廠模式.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/chap03_pattern/factory/工廠模式.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/chap03_pattern/prototype/原型模式.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/chap03_pattern/singleton/tradition.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/chap03_pattern/singleton/單例模式.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/chap03_pattern/基本介紹.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/micron/pattern/adapter/classadapter/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/micron/pattern/adapter/classadapter/IVoltage5V.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/micron/pattern/adapter/classadapter/Phone.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/micron/pattern/adapter/classadapter/Voltage220V.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/micron/pattern/adapter/classadapter/VoltageAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/micron/pattern/adapter/interfaceadapter/AbsAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/micron/pattern/adapter/interfaceadapter/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/micron/pattern/adapter/interfaceadapter/Interface4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/micron/pattern/adapter/interfaceadapter/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/micron/pattern/adapter/objectadapter/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/micron/pattern/adapter/objectadapter/IVoltage5V.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/micron/pattern/adapter/objectadapter/Phone.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/micron/pattern/adapter/objectadapter/Voltage220V.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/micron/pattern/adapter/objectadapter/VoltageAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/micron/pattern/builder/improve/Apartment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/micron/pattern/builder/improve/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/micron/pattern/builder/improve/House.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/micron/pattern/builder/improve/HouseBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/micron/pattern/builder/improve/HouseDirector.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/micron/pattern/builder/improve/Villa.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/micron/pattern/builder/tradition/AbstractHouse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/micron/pattern/builder/tradition/Apartment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/micron/pattern/builder/tradition/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/micron/pattern/builder/tradition/Villa.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/micron/pattern/factory/abstractfactory/pizzastore/order/AbsFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/micron/pattern/factory/abstractfactory/pizzastore/order/BJFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/micron/pattern/factory/abstractfactory/pizzastore/order/LDFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/micron/pattern/factory/abstractfactory/pizzastore/order/OrderPizza.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/micron/pattern/factory/abstractfactory/pizzastore/order/PizzaStore.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/micron/pattern/factory/abstractfactory/pizzastore/pizza/BJCheesePizza.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/micron/pattern/factory/abstractfactory/pizzastore/pizza/BJPepperPizza.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/micron/pattern/factory/abstractfactory/pizzastore/pizza/LDCheesePizza.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/micron/pattern/factory/abstractfactory/pizzastore/pizza/LDPepperPizza.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/micron/pattern/factory/abstractfactory/pizzastore/pizza/Pizza.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/micron/pattern/factory/factorymethod/pizzastore/order/BJOrderPizza.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/micron/pattern/factory/factorymethod/pizzastore/order/LDOrderPizza.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/micron/pattern/factory/factorymethod/pizzastore/order/OrderPizza.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/micron/pattern/factory/factorymethod/pizzastore/order/PizzaStore.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/micron/pattern/factory/factorymethod/pizzastore/pizza/BJCheesePizza.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/micron/pattern/factory/factorymethod/pizzastore/pizza/BJPepperPizza.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/micron/pattern/factory/factorymethod/pizzastore/pizza/LDCheesePizza.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/micron/pattern/factory/factorymethod/pizzastore/pizza/LDPepperPizza.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/micron/pattern/factory/factorymethod/pizzastore/pizza/Pizza.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/micron/pattern/factory/simplefactory/pizzastore/order/OrderPizza.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/micron/pattern/factory/simplefactory/pizzastore/order/PizzaStore.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/micron/pattern/factory/simplefactory/pizzastore/order/SimpleFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/micron/pattern/factory/simplefactory/pizzastore/pizza/CheesePizza.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/micron/pattern/factory/simplefactory/pizzastore/pizza/GreekPizza.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/micron/pattern/factory/simplefactory/pizzastore/pizza/PepperPizza.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/micron/pattern/factory/simplefactory/pizzastore/pizza/Pizza.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/micron/pattern/factory/traditional/pizzastore/order/OrderPizza.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/micron/pattern/factory/traditional/pizzastore/order/PizzaStore.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/micron/pattern/factory/traditional/pizzastore/pizza/CheesePizza.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/micron/pattern/factory/traditional/pizzastore/pizza/GreekPizza.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/micron/pattern/factory/traditional/pizzastore/pizza/Pizza.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/micron/pattern/prototype/PrototypeClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/micron/pattern/prototype/Sheep.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/micron/pattern/prototype/deepclone/DeepClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/micron/pattern/prototype/deepclone/DeepCloneableTarget.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/micron/pattern/prototype/deepclone/DeepPrototype.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/micron/pattern/singleton/doublecheck/SingletonTest1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/micron/pattern/singleton/enumdemo/SingletonTest1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/micron/pattern/singleton/hungry/SingletonTest1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/micron/pattern/singleton/hungry/SingletonTest2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/micron/pattern/singleton/lazy/SingletonTest1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/micron/pattern/singleton/lazy/SingletonTest2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/micron/pattern/singleton/lazy/SingletonTest3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/micron/pattern/singleton/staticinternal/SingletonTest1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/micron/principle/demeter/Demeter1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/micron/principle/demeter/DemeterDemo.puml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/micron/principle/demeter/DemeterImprove1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/micron/principle/dependencyinversion/DependencyInversion1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/micron/principle/dependencyinversion/DependencyInversionImprove1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/micron/principle/dependencyinversion/ParamPassWays.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/micron/principle/liskovsubstitution/Liskov1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/micron/principle/liskovsubstitution/LiskovImprove1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/micron/principle/openclosed/OpenCloasedImprove1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/micron/principle/openclosed/OpenClosed1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/micron/principle/segregation/Segregation1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/micron/principle/segregation/SegregationImprove1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/micron/principle/singleresponsibility/SingleResponsibility1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/micron/principle/singleresponsibility/SingleResponsibility2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/micron/principle/singleresponsibility/SingleResponsibility3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/micron/uml/aggregation/Computer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/micron/uml/aggregation/Monitor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/micron/uml/aggregation/Mouse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/micron/uml/composition/Computer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/micron/uml/composition/Monitor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/micron/uml/composition/Mouse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/micron/uml/dependence/Department.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/micron/uml/dependence/IDCard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/micron/uml/dependence/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/micron/uml/dependence/PersonDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/micron/uml/dependence/PersonServiceBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/micron/uml/generalization/PersonServiceBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/micron/uml/generalization/SupportDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/micron/uml/implementation/PersonService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/micron/uml/implementation/PersonServiceBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/micron/pattern/adapter/classadapter/Client.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/micron/pattern/adapter/classadapter/IVoltage5V.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/micron/pattern/adapter/classadapter/Phone.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/micron/pattern/adapter/classadapter/Voltage220V.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/micron/pattern/adapter/classadapter/VoltageAdapter.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/micron/pattern/adapter/interfaceadapter/AbsAdapter.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/micron/pattern/adapter/interfaceadapter/Client$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/micron/pattern/adapter/interfaceadapter/Client$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/micron/pattern/adapter/interfaceadapter/Client.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/micron/pattern/adapter/interfaceadapter/Interface4.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/micron/pattern/adapter/interfaceadapter/Test.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/micron/pattern/adapter/objectadapter/Client.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/micron/pattern/adapter/objectadapter/IVoltage5V.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/micron/pattern/adapter/objectadapter/Phone.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/micron/pattern/adapter/objectadapter/Voltage220V.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/micron/pattern/adapter/objectadapter/VoltageAdapter.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/micron/pattern/singleton/hungry/Singleton1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/micron/pattern/singleton/hungry/SingletonTest1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/unimicron/pattern/builder/improve/Apartment.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/unimicron/pattern/builder/improve/Client.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/unimicron/pattern/builder/improve/House.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/unimicron/pattern/builder/improve/HouseBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/unimicron/pattern/builder/improve/HouseDirector.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/unimicron/pattern/builder/improve/Villa.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/unimicron/pattern/builder/tradition/AbstractHouse.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/unimicron/pattern/builder/tradition/Apartment.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/unimicron/pattern/builder/tradition/Client.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/unimicron/pattern/builder/tradition/Villa.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/unimicron/pattern/factory/abstractfactory/pizzastore/order/AbsFactory.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/unimicron/pattern/factory/abstractfactory/pizzastore/order/BJFactory.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/unimicron/pattern/factory/abstractfactory/pizzastore/order/LDFactory.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/unimicron/pattern/factory/abstractfactory/pizzastore/order/OrderPizza.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/unimicron/pattern/factory/abstractfactory/pizzastore/order/PizzaStore.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/unimicron/pattern/factory/abstractfactory/pizzastore/pizza/BJCheesePizza.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/unimicron/pattern/factory/abstractfactory/pizzastore/pizza/BJPepperPizza.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/unimicron/pattern/factory/abstractfactory/pizzastore/pizza/LDCheesePizza.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/unimicron/pattern/factory/abstractfactory/pizzastore/pizza/LDPepperPizza.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/unimicron/pattern/factory/abstractfactory/pizzastore/pizza/Pizza.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/unimicron/pattern/factory/factorymethod/pizzastore/order/BJOrderPizza.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/unimicron/pattern/factory/factorymethod/pizzastore/order/LDOrderPizza.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/unimicron/pattern/factory/factorymethod/pizzastore/order/OrderPizza.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/unimicron/pattern/factory/factorymethod/pizzastore/order/PizzaStore.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/unimicron/pattern/factory/factorymethod/pizzastore/pizza/BJCheesePizza.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/unimicron/pattern/factory/factorymethod/pizzastore/pizza/BJPepperPizza.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/unimicron/pattern/factory/factorymethod/pizzastore/pizza/LDCheesePizza.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/unimicron/pattern/factory/factorymethod/pizzastore/pizza/LDPepperPizza.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/unimicron/pattern/factory/factorymethod/pizzastore/pizza/Pizza.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/unimicron/pattern/factory/simplefactory/pizzastore/order/OrderPizza.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/unimicron/pattern/factory/simplefactory/pizzastore/order/PizzaStore.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/unimicron/pattern/factory/simplefactory/pizzastore/order/SimpleFactory.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/unimicron/pattern/factory/simplefactory/pizzastore/pizza/CheesePizza.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/unimicron/pattern/factory/simplefactory/pizzastore/pizza/GreekPizza.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/unimicron/pattern/factory/simplefactory/pizzastore/pizza/PepperPizza.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/unimicron/pattern/factory/simplefactory/pizzastore/pizza/Pizza.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/unimicron/pattern/factory/traditional/pizzastore/order/OrderPizza.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/unimicron/pattern/factory/traditional/pizzastore/order/PizzaStore.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/unimicron/pattern/factory/traditional/pizzastore/pizza/CheesePizza.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/unimicron/pattern/factory/traditional/pizzastore/pizza/GreekPizza.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/unimicron/pattern/factory/traditional/pizzastore/pizza/Pizza.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/unimicron/pattern/prototype/PrototypeClient.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/unimicron/pattern/prototype/Sheep.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/unimicron/pattern/prototype/deepclone/DeepClient.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/unimicron/pattern/prototype/deepclone/DeepCloneableTarget.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/unimicron/pattern/prototype/deepclone/DeepPrototype.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/unimicron/pattern/singleton/doublecheck/Singleton1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/unimicron/pattern/singleton/doublecheck/SingletonTest1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/unimicron/pattern/singleton/enumdemo/Singleton1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/unimicron/pattern/singleton/enumdemo/SingletonTest1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/unimicron/pattern/singleton/hungry/Singleton2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/unimicron/pattern/singleton/hungry/SingletonTest2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/unimicron/pattern/singleton/lazy/Singleton1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/unimicron/pattern/singleton/lazy/Singleton2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/unimicron/pattern/singleton/lazy/Singleton3.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/unimicron/pattern/singleton/lazy/SingletonTest1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/unimicron/pattern/singleton/lazy/SingletonTest2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/unimicron/pattern/singleton/lazy/SingletonTest3.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/unimicron/pattern/singleton/staticinternal/Singleton1$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/unimicron/pattern/singleton/staticinternal/Singleton1$SingletonInstance.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/unimicron/pattern/singleton/staticinternal/Singleton1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/unimicron/pattern/singleton/staticinternal/SingletonTest1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/unimicron/principle/demeter/CollegeEmployee.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/unimicron/principle/demeter/CollegeManager.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/unimicron/principle/demeter/Demeter1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/unimicron/principle/demeter/DemeterImprove1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/unimicron/principle/demeter/UniversityEmployee.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/unimicron/principle/demeter/UniversityManager.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/unimicron/principle/dependencyinversion/DependencyInversion1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/unimicron/principle/dependencyinversion/DependencyInversionImprove1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/unimicron/principle/dependencyinversion/Email.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/unimicron/principle/dependencyinversion/Email2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/unimicron/principle/dependencyinversion/Facebook2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/unimicron/principle/dependencyinversion/IOpenAndClose1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/unimicron/principle/dependencyinversion/IOpenAndClose2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/unimicron/principle/dependencyinversion/IOpenAndClose3.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/unimicron/principle/dependencyinversion/IReceiver.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/unimicron/principle/dependencyinversion/ITV1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/unimicron/principle/dependencyinversion/ITV2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/unimicron/principle/dependencyinversion/ITV3.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/unimicron/principle/dependencyinversion/OpenAndClose1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/unimicron/principle/dependencyinversion/OpenAndClose2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/unimicron/principle/dependencyinversion/OpenAndClose3.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/unimicron/principle/dependencyinversion/ParamPassWays.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/unimicron/principle/dependencyinversion/Person.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/unimicron/principle/dependencyinversion/Person2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/unimicron/principle/dependencyinversion/RealTV1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/unimicron/principle/dependencyinversion/RealTV2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/unimicron/principle/dependencyinversion/RealTV3.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/unimicron/principle/liskovsubstitution/A.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/unimicron/principle/liskovsubstitution/B.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/unimicron/principle/liskovsubstitution/Base.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/unimicron/principle/liskovsubstitution/C.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/unimicron/principle/liskovsubstitution/D.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/unimicron/principle/liskovsubstitution/Liskov1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/unimicron/principle/liskovsubstitution/LiskovImprove1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/unimicron/principle/openclosed/Circle.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/unimicron/principle/openclosed/Circle2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/unimicron/principle/openclosed/GraphicEditor.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/unimicron/principle/openclosed/GraphicEditor2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/unimicron/principle/openclosed/OpenCloasedImprove1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/unimicron/principle/openclosed/OpenClosed1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/unimicron/principle/openclosed/Rectangle.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/unimicron/principle/openclosed/Rectangle2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/unimicron/principle/openclosed/Shape.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/unimicron/principle/openclosed/Shape2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/unimicron/principle/openclosed/Square.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/unimicron/principle/openclosed/Square2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/unimicron/principle/segregation/A.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/unimicron/principle/segregation/AA.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/unimicron/principle/segregation/B.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/unimicron/principle/segregation/BB.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/unimicron/principle/segregation/C.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/unimicron/principle/segregation/CC.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/unimicron/principle/segregation/D.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/unimicron/principle/segregation/DD.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/unimicron/principle/segregation/Interface1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/unimicron/principle/segregation/Interface11.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/unimicron/principle/segregation/Interface12.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/unimicron/principle/segregation/Interface13.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/unimicron/principle/segregation/Segregation1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/unimicron/principle/segregation/SegregationImprove1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/unimicron/principle/singleresponsibility/AirVehicle.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/unimicron/principle/singleresponsibility/RoadVehicle.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/unimicron/principle/singleresponsibility/SingleResponsibility1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/unimicron/principle/singleresponsibility/SingleResponsibility2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/unimicron/principle/singleresponsibility/SingleResponsibility3.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/unimicron/principle/singleresponsibility/Vehicle.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/unimicron/principle/singleresponsibility/Vehicle3.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/unimicron/principle/singleresponsibility/WaterVehicle.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/unimicron/uml/aggregation/Computer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/unimicron/uml/aggregation/Monitor.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/unimicron/uml/aggregation/Mouse.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/unimicron/uml/composition/Computer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/unimicron/uml/composition/Monitor.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/unimicron/uml/composition/Mouse.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/unimicron/uml/dependence/Department.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/unimicron/uml/dependence/IDCard.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/unimicron/uml/dependence/Person.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/unimicron/uml/dependence/PersonDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/unimicron/uml/dependence/PersonServiceBean.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/unimicron/uml/generalization/PersonServiceBean.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/unimicron/uml/generalization/SupportDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/unimicron/uml/implementation/PersonService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/unimicron/uml/implementation/PersonServiceBean.class" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="UML Class" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="D:\IdeaProjects\design-pattern-tutorial\.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1jRxaPrs2N5TRl6c1q1NmFSWEZY" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultPlantUmlFileTemplate" value="UML Class" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\IdeaProjects\design-pattern-tutorial\src\main\java\com\micron\pattern\adapter\objectadapter" />
+      <recent name="D:\IdeaProjects\design-pattern-tutorial\src\main\java\com\unimicron\pattern\builder\new" />
+      <recent name="D:\IdeaProjects\design-pattern-tutorial\doc\chap03_pattern" />
+      <recent name="D:\IdeaProjects\design-pattern-tutorial\src\main\java\com\unimicron\pattern\factory\abstractfactory\pizzastore" />
+      <recent name="D:\IdeaProjects\design-pattern-tutorial\src\main\java\com\unimicron\pattern\factory\factorymethod\pizzastore" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\IdeaProjects\design-pattern-tutorial\doc\chap03_pattern\adapter" />
+      <recent name="D:\IdeaProjects\design-pattern-tutorial\doc\chap03_pattern\prototype" />
+      <recent name="D:\IdeaProjects\design-pattern-tutorial\doc\chap03_pattern\singleton" />
+      <recent name="D:\IdeaProjects\design-pattern-tutorial\doc\chap03_pattern\factory" />
+      <recent name="D:\IdeaProjects\design-pattern-tutorial\doc\chap03_pattern\builder" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Client (2)">
+    <configuration name="Client (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.unimicron.pattern.builder.improve.Client" />
+      <module name="design-pattern-tutorial" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.unimicron.pattern.builder.improve.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Client (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.micron.pattern.adapter.classadapter.Client" />
+      <module name="design-pattern-tutorial" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.micron.pattern.adapter.classadapter.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Client (3)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.micron.pattern.adapter.objectadapter.Client" />
+      <module name="design-pattern-tutorial" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.micron.pattern.adapter.objectadapter.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Client (4)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.micron.pattern.adapter.interfaceadapter.Client" />
+      <module name="design-pattern-tutorial" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.micron.pattern.adapter.interfaceadapter.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.unimicron.pattern.builder.tradition.Client" />
+      <module name="design-pattern-tutorial" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.unimicron.pattern.builder.tradition.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Client (2)" />
+        <item itemvalue="Application.Client (4)" />
+        <item itemvalue="Application.Client (3)" />
+        <item itemvalue="Application.Client (1)" />
+        <item itemvalue="Application.Client" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="47c00246-f312-40d0-9779-b4e78e57d251" name="Default Changelist" comment="" />
+      <created>1603780767699</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1603780767699</updated>
+      <workItem from="1607967219300" duration="5771000" />
+      <workItem from="1609166926661" duration="1197000" />
+      <workItem from="1610024992653" duration="9309000" />
+      <workItem from="1610291958888" duration="1168000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="design pattern v1 from atguigu" />
+    <option name="LAST_COMMIT_MESSAGE" value="design pattern v1 from atguigu" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="361" y="71" key="#Project_Structure" timestamp="1608366051870">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="71" key="#Project_Structure/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1608366051870" />
+    <state x="581" y="140" key="#com.intellij.ide.util.MemberChooser" timestamp="1610032007050">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="581" y="140" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1610032007050" />
+    <state x="605" y="146" key="#com.intellij.ide.util.MemberChooser/0.0.1600.860@0.0.1600.860" timestamp="1605516586123" />
+    <state x="325" y="355" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1604980558414">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="325" y="355" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1600.860@0.0.1600.860" timestamp="1604980558414" />
+    <state x="425" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1608364514576">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="425" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1608364514576" />
+    <state x="530" y="177" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1604999538286">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="530" y="177" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1600.860@0.0.1600.860" timestamp="1604999538286" />
+    <state x="354" y="5" key="CommitChangelistDialog2" timestamp="1610293071998">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="354" y="5" key="CommitChangelistDialog2/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1610293071998" />
+    <state x="557" y="177" key="FileChooserDialogImpl" timestamp="1610292891988">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="557" y="177" key="FileChooserDialogImpl/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1610292891988" />
+    <state x="580" y="185" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1604632487595" />
+    <state width="1493" height="114" key="GridCell.Tab.0.bottom" timestamp="1610293072758">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="114" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1610293072758" />
+    <state width="1557" height="2" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1605671432961" />
+    <state width="1493" height="114" key="GridCell.Tab.0.center" timestamp="1610293072758">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="114" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1610293072758" />
+    <state width="1557" height="2" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1605671432960" />
+    <state width="1493" height="114" key="GridCell.Tab.0.left" timestamp="1610293072757">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="114" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1610293072757" />
+    <state width="1557" height="2" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1605671432960" />
+    <state width="1493" height="114" key="GridCell.Tab.0.right" timestamp="1610293072758">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="114" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1610293072758" />
+    <state width="1557" height="2" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1605671432961" />
+    <state x="392" y="89" key="PlantUMLSettings" timestamp="1604632490393">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="392" y="89" key="PlantUMLSettings/0.0.1600.860@0.0.1600.860" timestamp="1604632490393" />
+    <state x="289" y="69" key="SettingsEditor" timestamp="1610292784095">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="289" y="69" key="SettingsEditor/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1610292784095" />
+    <state x="301" y="72" key="SettingsEditor/0.0.1600.860@0.0.1600.860" timestamp="1604631069113" />
+    <state x="468" y="243" key="com.intellij.ide.util.TipDialog" timestamp="1610291957641">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="468" y="243" key="com.intellij.ide.util.TipDialog/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1610291957641" />
+    <state x="487" y="254" key="com.intellij.ide.util.TipDialog/0.0.1600.860@0.0.1600.860" timestamp="1605750122912" />
+    <state x="456" y="195" key="run.anything.popup" timestamp="1604995186946">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="456" y="195" key="run.anything.popup/0.0.1600.860@0.0.1600.860" timestamp="1604995186946" />
+    <state x="444" y="172" width="672" height="650" key="search.everywhere.popup" timestamp="1610031026559">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="444" y="172" width="672" height="650" key="search.everywhere.popup/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1610031026559" />
+    <state x="463" y="180" width="672" height="678" key="search.everywhere.popup/0.0.1600.860@0.0.1600.860" timestamp="1605234215919" />
+  </component>
+</project>

@@ -1,0 +1,4 @@
+合成復用原則(Composite Reuse Principle)
+
+基本介紹(composite_concept.png，會在UML類圖中詳細介紹以下名詞)
+原則是盡量使用組合/聚合的方式，而不是使用繼承

@@ -1,0 +1,107 @@
+適配器模式(Adapter)
+
+基本介紹
+1. 適配器模式是透過一個Adapter，將某個類的接口轉換成客戶端期望的另一個接口表示，主要目的是兼容性，讓原本接口不匹配而不能一起工作的
+   兩個類可以協同工作，其別名為包裝器(Wrapper)
+2. 適配器模式屬於結構型模式
+3. 主要分為三類: 類適配器模式、對象適配器模式、接口適配器模式(主要是具體的實現形式不一樣)
+
+工作原理
+1. 適配器模式: 將一個類的接口轉換成另一種接口，讓原本接口不兼容的淚可以兼容
+2. 從用戶的角度看不到被適配者，達到解偶作用
+3. 用戶調用(適配器)轉化出來的目標接口方法，適配器再調用被適配者的相關接口方法
+4. 用戶接收到反饋結果，感覺只是和目標接口交互
+
+---------------------------------------
+
+類適配器模式
+
+基本介紹
+Adapter類，通過繼承src類，實現dst類接口，完成src->dst的適配
+
+應用實例
+以生活中充電器的例子來講解適配器，充電器本身相當於Adapter，220V交流電相當於src(被適配者)，我們的目dst(目標)是5V直流電
+
+注意事項
+1. Java是單繼承機制，所以類適配器需要繼承src類這一點算是一個缺點，因為這要求dst必須是接口，有一定侷限性
+   -> 增加耦合度
+2. src類的方法在Adapter類適配器中都會暴露出來，也增加了使用成本
+3. 由於其繼承了src類，所以它可以根據需求重寫src類的方法，使得Adapter的靈活性增強了
+-> 使用類適配器有優點也有缺點，但總體而言我們還是要根據缺點去進行改善(避免使用繼承)
+
+---------------------------------------
+
+對象適配器
+
+基本介紹
+基本思路和類適配器模式相同，只是將Adapter類做修改，不是繼承src類，而是持有srd類的實例，以解決兼容性的問題，即: 持有src類，實現dst
+類接口，完成src->dst的適配
+根據合成復用原則，在系統中盡量使用關聯關係來替代繼承關係
+對象適配器模式是適配器模式常用的一種
+
+應用實例
+以生活中充電器的例子來講解適配器，充電器本身相當於Adapter，220V交流電相當於src(被適配者)，我們的目dst(目標)是5V直流電，使用對象
+適配器模式完成
+
+思路分析
+只需修改適配器即可，如下:
+public class VoltageAdapter2 implements Voltage5 {
+    private Voltage220 voltage220; // 持有Voltage220對象，而不是繼承
+}
+
+注意事項
+1. 對象適配器和類適配器其實算是同一種思想，只不過實現方式不同
+2. 根據合成復用原則，使用組合替代繼承，所以她解決了類適配器必須繼承src的侷限型，也不再要求dst必須是接口
+3. 使用成本更低，更靈活
+
+---------------------------------------
+
+接口適配器模式
+
+基本介紹
+一些書籍稱為: 適配器模式(Default Adapter Pattern)或缺省適配器模式
+當不需要全部實現接口提供的方法時，可先設計一個抽象類實現接口，並為該接口中每個方法提供一個默認實現(空方法)，那麼該抽象類的子類可有
+選擇地覆蓋復類的某些方法來實現需求
+適用於一個接口不想使用其所有的方法的情況
+
+應用實例
+AnimatorListerAdapter類，是一個接口適配器，代碼如下，它空實現了Animator.AnimatorListener類和Animator.AnimatorPauseListener類
+(src)的所有方法，Animator.AnimatorListener類和Animator.AnimatorPauseListener類都是interface
+public static interface AnimatorListener{
+    void onAnimatorStart(Animator animation);
+    void onAnimatorEnd(Animator animation);
+    void onAnimatorCancel(Animator animation);
+    void onAnimatorRepeat(Animator animation);
+}
+public static interface AnimatorPauseListener{
+    void onAnimatorPause(Animator animation);
+    void onAnimatorResume(Animator animation);
+}
+public abstract class AnimatorListenerAdapter implements Animator.AnimatorListener, Animator.AnimatorPauseListener {
+    @Override
+    public void onAnimatorStart(Animator animation){}
+
+    @Override
+    public void onAnimatorEnd(Animator animation){}
+
+    @Override
+    public void onAnimatorCancel(Animator animation){}
+
+    @Override
+    public void onAnimatorRepeat(Animator animation){}
+
+    @Override
+    public void onAnimatorPause(Animator animation){}
+
+    @Override
+    public void onAnimatorResuem(Animator animation){}
+}
+程序裡的匿名內部類就是Listener具體實現類
+AnimatorListenerAdapter雖是抽象類，但如果以匿名內部類的方式，是可以實現的，之前的例子也是將Adapter類以匿名內部類的方式作為參數
+使用
+new AnimatorListenerAdapter(){
+    @Override
+    public void onAnimationStart(Animator animation){
+        // xxxx具體實現
+    }
+}

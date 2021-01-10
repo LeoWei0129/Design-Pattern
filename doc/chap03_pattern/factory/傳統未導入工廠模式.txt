@@ -1,0 +1,37 @@
+工廠模式(Factory)
+
+先看一個需求
+一個訂購披薩的項目: 要便於披薩種類的擴展，及便於維護
+a. 披薩的種類很多(ex: CheesePizza、GreekPizza等)
+b. 披薩的製作有prepare、bake、cut、box
+c. 完成披薩店訂購的功能
+
+使用傳統方式完成需求的優缺點(tradition.png)
+1. 優點是比較好理解，易操作
+2. 缺點是違反了OCP原則，即對擴展開放、對修改關閉(對內擴展開放，對外修改關閉)，即當我們給類增加新功能時，盡量不修改代碼，或少修改代碼
+3. 比如我們要新增一個披薩種類時(PepperPizza)，外部要做如下修改(所謂的外部即非披薩類class Pizza，我們期望只要擴展披薩類就好):
+   do {
+        orderType = getType();
+        if (orderType.equals("Cheese")) {
+              pizza = new CheesePizza();
+              pizza.setName("奶酪披薩");
+        } else if (orderType.equals("Greek")) {
+              pizza = new GreekPizza();
+              pizza.setName("希臘披薩");
+        } else if (orderType.equals("Pepper")) {
+              pizza = new PepperPizza();
+              pizza.setName("胡椒披薩");
+        else {
+            break;
+        }
+        // 輸出披薩製作過程
+        pizza.prepare();
+        pizza.bake();
+        pizza.cut();
+        pizza.box();
+   } while (true);
+
+傳統方法的改進思路
+1. 修改代碼可以接受，但是如果我們在"其他地方"也有創建Pizza類的代碼，就意味著這個"其他地方"也需要修改代碼，而這個"其他地方"往往有多個
+2. 把"創建披薩對象"封裝到一個類中，這樣我們有新的Pizza類時，只需要修改該類即可，"其他地方"要創建Pizza對象的代碼就不需要修改了
+   => 簡單工廠模式
